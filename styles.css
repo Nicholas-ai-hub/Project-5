@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.contact{
+    position: relative;
+    height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(../img/pic14.jpg);
+    /* background: url(../img/pic14.jpg);  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+.contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+.content h2{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 40px;
+}
+ .content p{
+    font-weight: 300;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+ .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.icon {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.text p{
+    padding-top: 20px;
+}
+.inputbox span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    color: #666;
+}
+.text h3{
+    font-weight: 500;
+    color: #04c7db;
+    font-size: 30px;
+}
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}    
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputbox input 
+.inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+}
+.inputbox input[type="submit"]
+{
+    width: 100px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+}
+
+body {
+ font-family: monospace;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+.navbar{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 6%;
+    transform: translate(-5%, -50%);
+    display: none;
+}
+@media (max-width: 1048px){
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    .navbar{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 60px;
+    }
+    nav a{
+        font-size: 30px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+}

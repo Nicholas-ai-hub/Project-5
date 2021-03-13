@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: black;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+.navbar{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 6%;
+    transform: translate(-5%, -50%);
+    display: none;
+}
+@media (max-width: 1048px){
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    .navbar{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 60px;
+    }
+    nav a{
+        font-size: 30px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/pic15.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: top;
+    color: #fff;
+    justify-content: center;
+}
+.services{
+    margin: 90px auto;
+    text-align: center;
+}
+h1{
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h1:after{
+    content: '';
+    background: white;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 5px auto;
+}
+ 
+.row{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    top: -60px;
+  
+}
+.text{
+    width: 200px;
+    height: 100px;
+    margin-left: 150px;
+    margin: 0 auto;
+}
+.text h3{
+    font-size: 30px;
+}
+.text p{
+    line-height: 27px;
+    font-size: 20px;
+}
